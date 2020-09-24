@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4005799b-1a4a-48b5-b2e8-ede563ab5f2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlphaParser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/AlphaParser.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/AlphaGrammar.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/AlphaGrammar.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/AlphaGrammar.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/AlphaGrammar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaGrammar.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaGrammar.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaGrammar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaGrammar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,19 +82,27 @@
       <option name="project" value="LOCAL" />
       <updated>1600961102102</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Class grammar">
+      <created>1600968122074</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600968122077</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Diferens way to create digit and letter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Diferens way to create digit and letter" />
+    <MESSAGE value="Class grammar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class grammar" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="452" y="0" key="CommitChangelistDialog2" timestamp="1600961100470">
+    <state x="452" y="0" key="CommitChangelistDialog2" timestamp="1600968120812">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="452" y="0" key="CommitChangelistDialog2/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600961100470" />
+    <state x="452" y="0" key="CommitChangelistDialog2/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600968120812" />
     <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1600751204810">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

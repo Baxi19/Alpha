@@ -1,7 +1,4 @@
-let
-
-in
-
 begin
-
+    x := 4;
+    y(5)
 end

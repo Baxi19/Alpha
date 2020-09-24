@@ -19,12 +19,19 @@ public class Main {
             inst = new generated.AlphaGrammar(input);
             tokens = new CommonTokenStream(inst);
             instParser = new AlphaParser(tokens);
+            instParser.program();
+            System.out.println("Compilacion Terminada");
         }catch(Exception e){System.out.println("No hay archivo");e.printStackTrace();}
-        List<Token> lista = (List<Token>) inst.getAllTokens();
+
+    /*    List<Token> lista = (List<Token>) inst.getAllTokens();
+
         for (Token t : lista)
             System.out.println(inst.ruleNames[t.getType()-1] + ":" + t.getText() + "\n");
+
         // inst = new Scanner(input);
         // inst.reset();
+
+     */
     }
 }
 
