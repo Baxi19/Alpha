@@ -1,41 +1,43 @@
 //--------------------------------------------------------------
 lexer grammar AlphaGrammar;
 
+
 //--------------------------------------------------------------
-//Reserved Keywords
-IF : 'if' ;
-THEN : 'then' ;
-ELSE : 'else' ;
-WHILE : 'while' ;
-DO : 'do' ;
-LET : 'let' ;
-IN : 'in' ;
-BEGIN : 'begin' ;
-END : 'end' ;
-CONST : 'const' ;
-VAR : 'var' ;
+// Symbols
+PyCOMMA     : ';' ;
+TWO_P       : ':' ;
+L_PARENT    : '(' ;
+R_PARENT    : ')' ;
+VIR         : '~' ;  //para asignacion de const
 
 
 //--------------------------------------------------------------
 //Operators
-ASSING : ':=' ;
-SUM : '+' ;
-SUB : '-' ;
-MUL : '*' ;
-DIV : '/' ;
-NOT_EQUAL : '/=' ;
-
-//--------------------------------------------------------------
-// Symbols
-PYCOMMA : ';' ;
-L_PARENT : '(' ;
-R_PARENT : ')' ;
-VIRG : '~' ;
-TWO_P : ':' ;
+ASSING      : ':=' ;
+SUM         : '+' ;
+SUB         : '-' ;
+MUL         : '*' ;
+DIV         : '/' ;
+NOT_EQUAL   : '/=' ;
 
 
 //--------------------------------------------------------------
-//Regular expressions
+//Reserved Keywords
+IF          : 'if' ;
+THEN        : 'then' ;
+ELSE        : 'else' ;
+WHILE       : 'while' ;
+DO          : 'do' ;
+LET         : 'let' ;
+IN          : 'in' ;
+BEGIN       : 'begin' ;
+END         : 'end' ;
+CONST       : 'const' ;
+VAR         : 'var' ;
+
+
+//--------------------------------------------------------------
+//Others Regular expressions
 INTEGER: [1-9][0-9]* | ZERO;
 
 fragment ZERO
@@ -50,10 +52,13 @@ fragment DIGIT
 // Letter
 IDENT : LETTER(LETTER|DIGIT)*;
 
+
+// fragment LETTER : 'a'..'z' | 'A'..'Z';
 fragment LETTER
     : [a-z]
     ;
 
+// fragment DIGIT : '0'..'9';
 LITERAL
     : DIGIT DIGIT*
     ;

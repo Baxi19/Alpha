@@ -5,16 +5,16 @@ options {
 }
 
 program :  single_command;
-command : IDENT (PYCOMMA single_command)*;
+command : IDENT (PyCOMMA single_command)*;
 single_command
     : IDENT ( ASSING  expression | L_PARENT expression R_PARENT )
     | IF expression THEN single_command ELSE single_command
     | WHILE expression DO single_command
     | LET declaration IN single_command
     | BEGIN command END;
-declaration : single_declaration (PYCOMMA single_declaration )*;
+declaration : single_declaration (PyCOMMA single_declaration )*;
 single_declaration
-    : CONST IDENT VIRG expression
+    : CONST IDENT VIR expression
     | VAR IDENT TWO_P IDENT;
 
 operator
