@@ -23,11 +23,11 @@ public interface AlphaParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitCommand(AlphaParser.CommandContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link AlphaParser#single_command}.
+	 * Visit a parse tree produced by {@link AlphaParser#singleCommand}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitSingle_command(AlphaParser.Single_commandContext ctx);
+	T visitSingleCommand(AlphaParser.SingleCommandContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link AlphaParser#declaration}.
 	 * @param ctx the parse tree
@@ -35,17 +35,17 @@ public interface AlphaParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitDeclaration(AlphaParser.DeclarationContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link AlphaParser#single_declaration}.
+	 * Visit a parse tree produced by {@link AlphaParser#singleDeclaration}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitSingle_declaration(AlphaParser.Single_declarationContext ctx);
+	T visitSingleDeclaration(AlphaParser.SingleDeclarationContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link AlphaParser#operator}.
+	 * Visit a parse tree produced by {@link AlphaParser#typeDenoter}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitOperator(AlphaParser.OperatorContext ctx);
+	T visitTypeDenoter(AlphaParser.TypeDenoterContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link AlphaParser#expression}.
 	 * @param ctx the parse tree
@@ -53,9 +53,15 @@ public interface AlphaParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitExpression(AlphaParser.ExpressionContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link AlphaParser#primary_exp}.
+	 * Visit a parse tree produced by {@link AlphaParser#primaryExpression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitPrimary_exp(AlphaParser.Primary_expContext ctx);
+	T visitPrimaryExpression(AlphaParser.PrimaryExpressionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link AlphaParser#operator}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitOperator(AlphaParser.OperatorContext ctx);
 }

@@ -31,7 +31,7 @@ public class AlphaParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> imple
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitSingle_command(AlphaParser.Single_commandContext ctx) { return visitChildren(ctx); }
+	@Override public T visitSingleCommand(AlphaParser.SingleCommandContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -45,14 +45,14 @@ public class AlphaParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> imple
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitSingle_declaration(AlphaParser.Single_declarationContext ctx) { return visitChildren(ctx); }
+	@Override public T visitSingleDeclaration(AlphaParser.SingleDeclarationContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitOperator(AlphaParser.OperatorContext ctx) { return visitChildren(ctx); }
+	@Override public T visitTypeDenoter(AlphaParser.TypeDenoterContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -66,5 +66,12 @@ public class AlphaParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> imple
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitPrimary_exp(AlphaParser.Primary_expContext ctx) { return visitChildren(ctx); }
+	@Override public T visitPrimaryExpression(AlphaParser.PrimaryExpressionContext ctx) { return visitChildren(ctx); }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
+	@Override public T visitOperator(AlphaParser.OperatorContext ctx) { return visitChildren(ctx); }
 }
