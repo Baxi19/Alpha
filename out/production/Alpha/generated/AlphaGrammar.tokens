@@ -23,6 +23,7 @@ TWO_P=22
 INTEGER=23
 IDENT=24
 LITERAL=25
+WS=26
 'if'=1
 'then'=2
 'else'=3
