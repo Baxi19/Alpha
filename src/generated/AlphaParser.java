@@ -17,9 +17,10 @@ public class AlphaParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		IF=1, THEN=2, ELSE=3, WHILE=4, DO=5, LET=6, IN=7, BEGIN=8, END=9, CONST=10, 
-		VAR=11, ASSING=12, SUM=13, SUB=14, MUL=15, DIV=16, NOT_EQUAL=17, PYCOMMA=18, 
-		L_PARENT=19, R_PARENT=20, VIRG=21, TWO_P=22, INTEGER=23, IDENT=24, LITERAL=25;
+		PyCOMMA=1, TWO_P=2, L_PARENT=3, R_PARENT=4, VIR=5, ASSING=6, SUM=7, SUB=8, 
+		MUL=9, DIV=10, NOT_EQUAL=11, IF=12, THEN=13, ELSE=14, WHILE=15, DO=16, 
+		LET=17, IN=18, BEGIN=19, END=20, CONST=21, VAR=22, INTEGER=23, IDENT=24, 
+		LITERAL=25, WS=26;
 	public static final int
 		RULE_program = 0, RULE_command = 1, RULE_single_command = 2, RULE_declaration = 3, 
 		RULE_single_declaration = 4, RULE_operator = 5, RULE_expression = 6, RULE_primary_exp = 7;
@@ -33,17 +34,18 @@ public class AlphaParser extends Parser {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'if'", "'then'", "'else'", "'while'", "'do'", "'let'", "'in'", 
-			"'begin'", "'end'", "'const'", "'var'", "':='", "'+'", "'-'", "'*'", 
-			"'/'", "'/='", "';'", "'('", "')'", "'~'", "':'"
+			null, "';'", "':'", "'('", "')'", "'~'", "':='", "'+'", "'-'", "'*'", 
+			"'/'", "'/='", "'if'", "'then'", "'else'", "'while'", "'do'", "'let'", 
+			"'in'", "'begin'", "'end'", "'const'", "'var'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, "IF", "THEN", "ELSE", "WHILE", "DO", "LET", "IN", "BEGIN", "END", 
-			"CONST", "VAR", "ASSING", "SUM", "SUB", "MUL", "DIV", "NOT_EQUAL", "PYCOMMA", 
-			"L_PARENT", "R_PARENT", "VIRG", "TWO_P", "INTEGER", "IDENT", "LITERAL"
+			null, "PyCOMMA", "TWO_P", "L_PARENT", "R_PARENT", "VIR", "ASSING", "SUM", 
+			"SUB", "MUL", "DIV", "NOT_EQUAL", "IF", "THEN", "ELSE", "WHILE", "DO", 
+			"LET", "IN", "BEGIN", "END", "CONST", "VAR", "INTEGER", "IDENT", "LITERAL", 
+			"WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -135,9 +137,9 @@ public class AlphaParser extends Parser {
 
 	public static class CommandContext extends ParserRuleContext {
 		public TerminalNode IDENT() { return getToken(AlphaParser.IDENT, 0); }
-		public List<TerminalNode> PYCOMMA() { return getTokens(AlphaParser.PYCOMMA); }
-		public TerminalNode PYCOMMA(int i) {
-			return getToken(AlphaParser.PYCOMMA, i);
+		public List<TerminalNode> PyCOMMA() { return getTokens(AlphaParser.PyCOMMA); }
+		public TerminalNode PyCOMMA(int i) {
+			return getToken(AlphaParser.PyCOMMA, i);
 		}
 		public List<Single_commandContext> single_command() {
 			return getRuleContexts(Single_commandContext.class);
@@ -168,11 +170,11 @@ public class AlphaParser extends Parser {
 			setState(23);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while (_la==PYCOMMA) {
+			while (_la==PyCOMMA) {
 				{
 				{
 				setState(19);
-				match(PYCOMMA);
+				match(PyCOMMA);
 				setState(20);
 				single_command();
 				}
@@ -348,9 +350,9 @@ public class AlphaParser extends Parser {
 		public Single_declarationContext single_declaration(int i) {
 			return getRuleContext(Single_declarationContext.class,i);
 		}
-		public List<TerminalNode> PYCOMMA() { return getTokens(AlphaParser.PYCOMMA); }
-		public TerminalNode PYCOMMA(int i) {
-			return getToken(AlphaParser.PYCOMMA, i);
+		public List<TerminalNode> PyCOMMA() { return getTokens(AlphaParser.PyCOMMA); }
+		public TerminalNode PyCOMMA(int i) {
+			return getToken(AlphaParser.PyCOMMA, i);
 		}
 		public DeclarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -375,11 +377,11 @@ public class AlphaParser extends Parser {
 			setState(63);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while (_la==PYCOMMA) {
+			while (_la==PyCOMMA) {
 				{
 				{
 				setState(59);
-				match(PYCOMMA);
+				match(PyCOMMA);
 				setState(60);
 				single_declaration();
 				}
@@ -407,7 +409,7 @@ public class AlphaParser extends Parser {
 		public TerminalNode IDENT(int i) {
 			return getToken(AlphaParser.IDENT, i);
 		}
-		public TerminalNode VIRG() { return getToken(AlphaParser.VIRG, 0); }
+		public TerminalNode VIR() { return getToken(AlphaParser.VIR, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -439,7 +441,7 @@ public class AlphaParser extends Parser {
 				setState(67);
 				match(IDENT);
 				setState(68);
-				match(VIRG);
+				match(VIR);
 				setState(69);
 				expression();
 				}
@@ -647,30 +649,30 @@ public class AlphaParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\33b\4\2\t\2\4\3\t"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\34b\4\2\t\2\4\3\t"+
 		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\3\2\3\2\3\3\3\3\3\3"+
 		"\7\3\30\n\3\f\3\16\3\33\13\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\5\4$\n\4\3\4"+
 		"\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3"+
 		"\4\3\4\3\4\5\4;\n\4\3\5\3\5\3\5\7\5@\n\5\f\5\16\5C\13\5\3\6\3\6\3\6\3"+
 		"\6\3\6\3\6\3\6\3\6\5\6M\n\6\3\7\3\7\3\b\3\b\3\b\3\b\7\bU\n\b\f\b\16\b"+
 		"X\13\b\3\t\3\t\3\t\3\t\3\t\3\t\5\t`\n\t\3\t\2\2\n\2\4\6\b\n\f\16\20\2"+
-		"\3\3\2\17\22\2d\2\22\3\2\2\2\4\24\3\2\2\2\6:\3\2\2\2\b<\3\2\2\2\nL\3\2"+
-		"\2\2\fN\3\2\2\2\16P\3\2\2\2\20_\3\2\2\2\22\23\5\6\4\2\23\3\3\2\2\2\24"+
-		"\31\7\32\2\2\25\26\7\24\2\2\26\30\5\6\4\2\27\25\3\2\2\2\30\33\3\2\2\2"+
-		"\31\27\3\2\2\2\31\32\3\2\2\2\32\5\3\2\2\2\33\31\3\2\2\2\34#\7\32\2\2\35"+
-		"\36\7\16\2\2\36$\5\16\b\2\37 \7\25\2\2 !\5\16\b\2!\"\7\26\2\2\"$\3\2\2"+
-		"\2#\35\3\2\2\2#\37\3\2\2\2$;\3\2\2\2%&\7\3\2\2&\'\5\16\b\2\'(\7\4\2\2"+
-		"()\5\6\4\2)*\7\5\2\2*+\5\6\4\2+;\3\2\2\2,-\7\6\2\2-.\5\16\b\2./\7\7\2"+
-		"\2/\60\5\6\4\2\60;\3\2\2\2\61\62\7\b\2\2\62\63\5\b\5\2\63\64\7\t\2\2\64"+
-		"\65\5\6\4\2\65;\3\2\2\2\66\67\7\n\2\2\678\5\4\3\289\7\13\2\29;\3\2\2\2"+
-		":\34\3\2\2\2:%\3\2\2\2:,\3\2\2\2:\61\3\2\2\2:\66\3\2\2\2;\7\3\2\2\2<A"+
-		"\5\n\6\2=>\7\24\2\2>@\5\n\6\2?=\3\2\2\2@C\3\2\2\2A?\3\2\2\2AB\3\2\2\2"+
-		"B\t\3\2\2\2CA\3\2\2\2DE\7\f\2\2EF\7\32\2\2FG\7\27\2\2GM\5\16\b\2HI\7\r"+
-		"\2\2IJ\7\32\2\2JK\7\30\2\2KM\7\32\2\2LD\3\2\2\2LH\3\2\2\2M\13\3\2\2\2"+
-		"NO\t\2\2\2O\r\3\2\2\2PV\5\20\t\2QR\5\f\7\2RS\5\20\t\2SU\3\2\2\2TQ\3\2"+
-		"\2\2UX\3\2\2\2VT\3\2\2\2VW\3\2\2\2W\17\3\2\2\2XV\3\2\2\2Y`\7\33\2\2Z`"+
-		"\7\32\2\2[\\\7\25\2\2\\]\5\16\b\2]^\7\26\2\2^`\3\2\2\2_Y\3\2\2\2_Z\3\2"+
-		"\2\2_[\3\2\2\2`\21\3\2\2\2\t\31#:ALV_";
+		"\3\3\2\t\f\2d\2\22\3\2\2\2\4\24\3\2\2\2\6:\3\2\2\2\b<\3\2\2\2\nL\3\2\2"+
+		"\2\fN\3\2\2\2\16P\3\2\2\2\20_\3\2\2\2\22\23\5\6\4\2\23\3\3\2\2\2\24\31"+
+		"\7\32\2\2\25\26\7\3\2\2\26\30\5\6\4\2\27\25\3\2\2\2\30\33\3\2\2\2\31\27"+
+		"\3\2\2\2\31\32\3\2\2\2\32\5\3\2\2\2\33\31\3\2\2\2\34#\7\32\2\2\35\36\7"+
+		"\b\2\2\36$\5\16\b\2\37 \7\5\2\2 !\5\16\b\2!\"\7\6\2\2\"$\3\2\2\2#\35\3"+
+		"\2\2\2#\37\3\2\2\2$;\3\2\2\2%&\7\16\2\2&\'\5\16\b\2\'(\7\17\2\2()\5\6"+
+		"\4\2)*\7\20\2\2*+\5\6\4\2+;\3\2\2\2,-\7\21\2\2-.\5\16\b\2./\7\22\2\2/"+
+		"\60\5\6\4\2\60;\3\2\2\2\61\62\7\23\2\2\62\63\5\b\5\2\63\64\7\24\2\2\64"+
+		"\65\5\6\4\2\65;\3\2\2\2\66\67\7\25\2\2\678\5\4\3\289\7\26\2\29;\3\2\2"+
+		"\2:\34\3\2\2\2:%\3\2\2\2:,\3\2\2\2:\61\3\2\2\2:\66\3\2\2\2;\7\3\2\2\2"+
+		"<A\5\n\6\2=>\7\3\2\2>@\5\n\6\2?=\3\2\2\2@C\3\2\2\2A?\3\2\2\2AB\3\2\2\2"+
+		"B\t\3\2\2\2CA\3\2\2\2DE\7\27\2\2EF\7\32\2\2FG\7\7\2\2GM\5\16\b\2HI\7\30"+
+		"\2\2IJ\7\32\2\2JK\7\4\2\2KM\7\32\2\2LD\3\2\2\2LH\3\2\2\2M\13\3\2\2\2N"+
+		"O\t\2\2\2O\r\3\2\2\2PV\5\20\t\2QR\5\f\7\2RS\5\20\t\2SU\3\2\2\2TQ\3\2\2"+
+		"\2UX\3\2\2\2VT\3\2\2\2VW\3\2\2\2W\17\3\2\2\2XV\3\2\2\2Y`\7\33\2\2Z`\7"+
+		"\32\2\2[\\\7\5\2\2\\]\5\16\b\2]^\7\6\2\2^`\3\2\2\2_Y\3\2\2\2_Z\3\2\2\2"+
+		"_[\3\2\2\2`\21\3\2\2\2\t\31#:ALV_";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
