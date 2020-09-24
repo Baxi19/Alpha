@@ -3,12 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="4005799b-1a4a-48b5-b2e8-ede563ab5f2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaGrammar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaGrammar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaGrammar.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaGrammar.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaGrammar.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaGrammar.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaParser.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaParser.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaParser.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaParser.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$CommandContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$CommandContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$DeclarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$DeclarationContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$OperatorContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$OperatorContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$Primary_expContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$Primary_expContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ProgramContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$Single_commandContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$Single_commandContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$Single_declarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$Single_declarationContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600959418329</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Diferens way to create digit and letter">
+      <created>1600959850263</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600959850263</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -82,33 +95,33 @@
     <option name="LAST_COMMIT_MESSAGE" value="Diferens way to create digit and letter" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="452" y="0" key="CommitChangelistDialog2" timestamp="1600959417032">
+    <state x="452" y="0" key="CommitChangelistDialog2" timestamp="1600961085856">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="452" y="0" key="CommitChangelistDialog2/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600959417032" />
+    <state x="452" y="0" key="CommitChangelistDialog2/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600961085856" />
     <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1600751204810">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1600751204810" />
-    <state width="754" height="201" key="GridCell.Tab.0.bottom" timestamp="1600959514230">
+    <state width="754" height="201" key="GridCell.Tab.0.bottom" timestamp="1600961046442">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="201" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600959514230" />
+    <state width="754" height="201" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600961046442" />
     <state width="756" height="204" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1600957346534" />
-    <state width="754" height="201" key="GridCell.Tab.0.center" timestamp="1600959514229">
+    <state width="754" height="201" key="GridCell.Tab.0.center" timestamp="1600961046442">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="201" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600959514229" />
+    <state width="754" height="201" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600961046442" />
     <state width="756" height="204" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1600957346533" />
-    <state width="754" height="201" key="GridCell.Tab.0.left" timestamp="1600959514229">
+    <state width="754" height="201" key="GridCell.Tab.0.left" timestamp="1600961046442">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="201" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600959514229" />
+    <state width="754" height="201" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600961046442" />
     <state width="756" height="204" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1600957346533" />
-    <state width="754" height="201" key="GridCell.Tab.0.right" timestamp="1600959514229">
+    <state width="754" height="201" key="GridCell.Tab.0.right" timestamp="1600961046442">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="754" height="201" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600959514229" />
+    <state width="754" height="201" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600961046442" />
     <state width="756" height="204" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1600957346533" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
