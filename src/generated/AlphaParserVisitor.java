@@ -23,11 +23,11 @@ public interface AlphaParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitCommand(AlphaParser.CommandContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link AlphaParser#singleCommand}.
+	 * Visit a parse tree produced by {@link AlphaParser#single_command}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitSingleCommand(AlphaParser.SingleCommandContext ctx);
+	T visitSingle_command(AlphaParser.Single_commandContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link AlphaParser#declaration}.
 	 * @param ctx the parse tree
@@ -35,17 +35,17 @@ public interface AlphaParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitDeclaration(AlphaParser.DeclarationContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link AlphaParser#singleDeclaration}.
+	 * Visit a parse tree produced by {@link AlphaParser#single_declaration}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitSingleDeclaration(AlphaParser.SingleDeclarationContext ctx);
+	T visitSingle_declaration(AlphaParser.Single_declarationContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link AlphaParser#typeDenoter}.
+	 * Visit a parse tree produced by {@link AlphaParser#operator}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitTypeDenoter(AlphaParser.TypeDenoterContext ctx);
+	T visitOperator(AlphaParser.OperatorContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link AlphaParser#expression}.
 	 * @param ctx the parse tree
@@ -53,15 +53,9 @@ public interface AlphaParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitExpression(AlphaParser.ExpressionContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link AlphaParser#primaryExpression}.
+	 * Visit a parse tree produced by {@link AlphaParser#primary_exp}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitPrimaryExpression(AlphaParser.PrimaryExpressionContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link AlphaParser#operator}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitOperator(AlphaParser.OperatorContext ctx);
+	T visitPrimary_exp(AlphaParser.Primary_expContext ctx);
 }

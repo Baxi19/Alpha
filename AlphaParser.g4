@@ -6,29 +6,29 @@ options {
     tokenVocab = AlphaGrammar;
 }
 
-
+/*
 program : singleCommand;
 command : singleCommand (PyCOMMA singleCommand)*;
 singleCommand :
 IDENT ( ASSING expression
-        | L_PARENT Expression R_PARENT )
+        | L_PARENT expression R_PARENT )
         | IF expression THEN singleCommand
                         ELSE singleCommand
         | WHILE expression DO singleCommand
-        | LET Declaration IN singleCommand
+        | LET declaration IN singleCommand
         | BEGIN command END;
 declaration  : singleDeclaration (PyCOMMA singleDeclaration)* ;
 singleDeclaration : CONST IDENT VIR expression
     	   | VAR IDENT TWO_P typeDenoter;
 typeDenoter : IDENT;
 expression :
-  		primaryExpression (Operator primaryExpression)*;
+  		primaryExpression (operator primaryExpression)*;
 
 primaryExpression :
 		LITERAL | IDENT | L_PARENT expression R_PARENT;
 operator : SUM | SUB | MUL | DIV ;
+*/
 
-/*
 //--------------------------------------------------------------
 program :  single_command; //EOF
 
@@ -63,4 +63,3 @@ primary_exp
     | IDENT
     | L_PARENT expression R_PARENT;
 //--------------------------------------------------------------
-*/
