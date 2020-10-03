@@ -88,13 +88,6 @@ public interface AlphaParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitVarSingleDeclarationAST(AlphaParser.VarSingleDeclarationASTContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code typeDenoterAST}
-	 * labeled alternative in {@link AlphaParser#typeDenoter}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitTypeDenoterAST(AlphaParser.TypeDenoterASTContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code expressionAST}
 	 * labeled alternative in {@link AlphaParser#expression}.
 	 * @param ctx the parse tree

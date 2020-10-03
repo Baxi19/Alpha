@@ -8,5 +8,5 @@ let
     var i           : int
 in
 begin
-    x := (x+y)
+    while x do y:= (, x 44)
 end

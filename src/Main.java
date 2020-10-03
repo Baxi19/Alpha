@@ -1,33 +1,59 @@
 import generated.AlphaParser;
 import generated.AlphaScanner;
+import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 
+import javax.swing.*;
+import java.util.concurrent.ExecutionException;
+
 public class Main {
-    public static void main(String[] args) {
-        AlphaParser instParser = null;
-        AlphaScanner inst = null;
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        AlphaParser parser = null;
+        AlphaScanner scanner = null;
         CharStream input = null;
         CommonTokenStream tokens = null;
+        ParseTree tree;
 
         try {
             input = CharStreams.fromFileName("test.txt");
-            inst = new generated.AlphaScanner(input);
-            tokens = new CommonTokenStream(inst);
-            instParser = new AlphaParser(tokens);
-            instParser.program();
-            System.out.println("Compilacion Terminada");
-        }catch(Exception e){System.out.println("No hay archivo");e.printStackTrace();}
+            scanner = new generated.AlphaScanner(input);
+            tokens = new CommonTokenStream(scanner);
+            parser = new AlphaParser(tokens);
+
+            AlphaErrorListener errorListener = new AlphaErrorListener();
+            scanner.removeErrorListeners();
+            parser.removeErrorListeners();
+            scanner.addErrorListener(errorListener);
+            parser.addErrorListener(errorListener);
+            tree = parser.program();
+
+            if(errorListener.hasErrors()){
+                System.out.println("Compilation: Failed");
+                System.out.println(errorListener.toString());
+            }
+            else{
+                java.util.concurrent.Future<JFrame> treeGUI = org.antlr.v4.gui.Trees.inspect(tree, parser);
+                treeGUI.get().setVisible(true);
+                System.out.println("Compilation: Successful");
+            }
+        }catch(Exception e){System.out.println("The file doesn't exist!");e.printStackTrace();}
+
+        tree = parser.program();
+        java.util.concurrent.Future<JFrame> treeGUI = org.antlr.v4.gui.Trees.inspect(tree, parser);
+        treeGUI.get().setVisible(true);
+
+
 
         /*
-        List<Token> lista = (List<Token>) inst.getAllTokens();
+        List<Token> lista = (List<Token>) scanner.getAllTokens();
 
         for (Token t : lista)
-            System.out.println(inst.ruleNames[t.getType()-1] + ":" + t.getText() + "\n");
+            System.out.println(scanner.ruleNames[t.getType()-1] + ":" + t.getText() + "\n");
         */
-        // inst = new Scanner(input);
-        // inst.reset();
+        // scanner = new Scanner(input);
+        // scanner.reset();
 
 
     }

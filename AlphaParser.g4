@@ -85,9 +85,9 @@ singleCommand           :
 declaration             : singleDeclaration (PyCOMMA singleDeclaration)*                                                #declarationAST;
 
 singleDeclaration       : CONST IDENT VIR expression                                                                    #constSingleDeclarationAST
-                        | VAR IDENT TWO_P typeDenoter                                                                   #varSingleDeclarationAST;
+                        | VAR IDENT TWO_P IDENT                                                                         #varSingleDeclarationAST;
 
-typeDenoter             : IDENT                                                                                         #typeDenoterAST;
+//typeDenoter             : IDENT                                                                                         #typeDenoterAST;
 
 expression              : primaryExpression (operator primaryExpression)*                                               #expressionAST;
 

@@ -2,40 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4005799b-1a4a-48b5-b2e8-ede563ab5f2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/generated/AlphaScanner.interp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/AlphaScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/generated/AlphaScanner.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AlphaErrorListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlphaGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/AlphaScanner.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlphaParser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/AlphaParser.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/AlphaGrammar.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/AlphaGrammar.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/AlphaGrammar.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/AlphaGrammar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/AlphaGrammar.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/AlphaGrammar.tokens" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Alpha/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaGrammar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaGrammar.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaGrammar.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$CommandContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$CommandContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$DeclarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$DeclarationContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ExpressionASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ExpressionASTContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$GroupPrimaryExpressionASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$GroupPrimaryExpressionASTContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$IdPrimaryExpressionASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$IdPrimaryExpressionASTContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$NumPrimaryExpressionASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$NumPrimaryExpressionASTContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$OperatorContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$OperatorContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$Primary_expContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ProgramContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$Single_commandContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$Single_declarationContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$PrimaryExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$PrimaryExpressionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$TypeDenoterASTContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$TypeDenoterContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$VarSingleDeclarationASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$VarSingleDeclarationASTContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.tokens" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParserBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParserBaseVisitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParserVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParserVisitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaGrammar.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaGrammar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaGrammar.tokens" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generated/AlphaParser.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaParser.interp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generated/AlphaParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaParser.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaParser.tokens" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generated/AlphaParserBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaParserBaseVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/generated/AlphaParserVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaParserVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
@@ -71,6 +58,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../compi_semana5" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -155,29 +147,29 @@
     </state>
     <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1601689263500" />
     <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1601688875326" />
-    <state width="1323" height="218" key="GridCell.Tab.0.bottom" timestamp="1601689354696">
+    <state width="1323" height="218" key="GridCell.Tab.0.bottom" timestamp="1601705575330">
       <screen x="1600" y="0" width="1366" height="728" />
     </state>
     <state width="1557" height="201" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600969473230" />
-    <state width="1323" height="218" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601689354696" />
+    <state width="1323" height="218" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601705575330" />
     <state width="1557" height="218" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601689184291" />
-    <state width="1323" height="218" key="GridCell.Tab.0.center" timestamp="1601689354696">
+    <state width="1323" height="218" key="GridCell.Tab.0.center" timestamp="1601705575330">
       <screen x="1600" y="0" width="1366" height="728" />
     </state>
     <state width="1557" height="201" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600969473229" />
-    <state width="1323" height="218" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601689354696" />
+    <state width="1323" height="218" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601705575330" />
     <state width="1557" height="218" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1601689184290" />
-    <state width="1323" height="218" key="GridCell.Tab.0.left" timestamp="1601689354695">
+    <state width="1323" height="218" key="GridCell.Tab.0.left" timestamp="1601705575330">
       <screen x="1600" y="0" width="1366" height="728" />
     </state>
     <state width="1557" height="201" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600969473229" />
-    <state width="1323" height="218" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601689354695" />
+    <state width="1323" height="218" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601705575330" />
     <state width="1557" height="218" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1601689184290" />
-    <state width="1323" height="218" key="GridCell.Tab.0.right" timestamp="1601689354696">
+    <state width="1323" height="218" key="GridCell.Tab.0.right" timestamp="1601705575330">
       <screen x="1600" y="0" width="1366" height="728" />
     </state>
     <state width="1557" height="201" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1600969473229" />
-    <state width="1323" height="218" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601689354696" />
+    <state width="1323" height="218" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601705575330" />
     <state width="1557" height="218" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1601689184291" />
     <state x="380" y="165" key="IDE.errors.dialog" timestamp="1601278987976">
       <screen x="0" y="0" width="1600" height="860" />
