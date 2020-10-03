@@ -1,4 +1,5 @@
 // Generated from C:/Users/Baxi/Desktop/Alpha\AlphaScanner.g4 by ANTLR 4.8
+package generated;
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -9,7 +10,7 @@ import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class AlphaGrammar extends Lexer {
+public class AlphaScanner extends Lexer {
 	static { RuntimeMetaData.checkVersion("4.8", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -91,7 +92,7 @@ public class AlphaGrammar extends Lexer {
 	}
 
 
-	public AlphaGrammar(CharStream input) {
+	public AlphaScanner(CharStream input) {
 		super(input);
 		_interp = new LexerATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}

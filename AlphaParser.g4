@@ -3,7 +3,7 @@ parser grammar AlphaParser;
 
 //--------------------------------------------------------------
 options {
-    tokenVocab = AlphaGrammar;
+    tokenVocab = AlphaScanner;
 }
 
 /*
@@ -29,37 +29,70 @@ primaryExpression :
 operator : SUM | SUB | MUL | DIV ;
 */
 
+
+
+/*
 //--------------------------------------------------------------
-program :  single_command; //EOF
 
 //--------------------------------------------------------------
-command : IDENT (PyCOMMA single_command)*;
+program             : singleCommand                     #ProgramAST;
 
 //--------------------------------------------------------------
-single_command
-    : IDENT ( ASSING  expression | L_PARENT expression R_PARENT )
-    | IF expression THEN single_command ELSE single_command
-    | WHILE expression DO single_command
-    | LET declaration IN single_command
-    | BEGIN command END;
+command             : singleCommand (PyCOMMA singleCommand)*   #CommandAST;
 
 //--------------------------------------------------------------
-declaration : single_declaration (PyCOMMA single_declaration )*;
-single_declaration
-    : CONST IDENT VIR expression
-    | VAR IDENT TWO_P IDENT;
+singleCommand       : IDENT  ASSING expression                                      #AssingSCAST
+                    |  IDENT L_PARENT expression R_PARENT             #CallSCAST
+                    | IF expression THEN singleCommand ELSE singleCommand #IfSCAST
+                    | WHILE expression DO singleCommand     #WhileSCAST
+                    | LET declaration IN singleCommand      #LetSCAST
+                    | BEGIN command END                     #BlockSCAST;
 
 //--------------------------------------------------------------
-operator
-    : SUM
-    | SUB
-    | DIV
-    | MUL ;
+declaration  : singleDeclaration (PyCOMMA singleDeclaration)*  #DeclarationAST;
 
 //--------------------------------------------------------------
-expression: primary_exp  (operator primary_exp)*;
-primary_exp
-    : LITERAL
-    | IDENT
-    | L_PARENT expression R_PARENT;
+singleDeclaration : CONST IDENT VIR expression      #ConsSDAST
+                    | VAR IDENT TWO_P typeDenoter             #VarSDAST;
+
 //--------------------------------------------------------------
+typeDenoter : IDENT  ;
+
+//--------------------------------------------------------------
+expression : primaryExpression (operator primaryExpression)* ;
+
+//--------------------------------------------------------------
+primaryExpression : LITERAL
+                    | IDENT
+                    | L_PARENT expression R_PARENT ;
+
+//--------------------------------------------------------------
+operator : SUM | SUB | MUL | DIV | ;
+
+*/
+program                 : singleCommand                                                                                 #programAST;
+
+command                 :singleCommand (PyCOMMA singleCommand)*                                                         #commandAST;
+
+singleCommand           :
+                        IDENT ASSING expression                                                                         #assignSingleCommandAST
+                        | IDENT L_PARENT expression R_PARENT                                                            #callSingleCommandAST
+                        | IF expression THEN singleCommand ELSE singleCommand                                           #ifSingleCommandAST
+                        | WHILE expression DO singleCommand                                                             #whileSingleCommandAST
+                        | LET declaration IN singleCommand                                                              #letSingleCommandAST
+                        | BEGIN command END                                                                             #blockSingleCommandAST;
+
+declaration             : singleDeclaration (PyCOMMA singleDeclaration)*                                                #declarationAST;
+
+singleDeclaration       : CONST IDENT VIR expression                                                                    #constSingleDeclarationAST
+                        | VAR IDENT TWO_P typeDenoter                                                                   #varSingleDeclarationAST;
+
+typeDenoter             : IDENT                                                                                         #typeDenoterAST;
+
+expression              : primaryExpression (operator primaryExpression)*                                               #expressionAST;
+
+primaryExpression       : LITERAL                                                                                       #numPrimaryExpressionAST
+                        | IDENT                                                                                         #idPrimaryExpressionAST
+                        | L_PARENT expression R_PARENT                                                                  #groupPrimaryExpressionAST;
+
+operator                : SUM | SUB | MUL | DIV                                                                         #operatorAST;

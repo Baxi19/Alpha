@@ -1,6 +1,5 @@
 //--------------------------------------------------------------
-lexer grammar AlphaGrammar;
-
+lexer grammar AlphaScanner;
 
 //--------------------------------------------------------------
 // Symbols
@@ -10,7 +9,6 @@ L_PARENT    : '(' ;
 R_PARENT    : ')' ;
 VIR         : '~' ;  //para asignacion de const
 
-
 //--------------------------------------------------------------
 //Operators
 ASSING      : ':=' ;
@@ -18,8 +16,14 @@ SUM         : '+' ;
 SUB         : '-' ;
 MUL         : '*' ;
 DIV         : '/' ;
-NOT_EQUAL   : '/=' ;
 
+//Added
+NOT_EQUAL   : '/=' ;
+GT          : '>';
+LT          : '<';
+LE          : '<=';
+GE          : '>=';
+EQUAL       : '==';
 
 //--------------------------------------------------------------
 //Reserved Keywords
@@ -34,7 +38,6 @@ BEGIN       : 'begin' ;
 END         : 'end' ;
 CONST       : 'const' ;
 VAR         : 'var' ;
-
 
 //--------------------------------------------------------------
 //Others Regular expressions
@@ -65,4 +68,9 @@ LITERAL
 
 //--------------------------------------------------------------
 // skiped words
-WS : [ \r\t\n]+ -> skip ;
+
+//CM : BLOCK_COMMENT ( BLOCK_COMMENT | COMMENT| WS )*;
+
+WS              : [ \r\t\n]+                -> skip ;
+BLOCK_COMMENT   : '/*' .*? '*/'             -> skip;
+COMMENT         : '//' ~[\r\n]* '\r'? '\n'  -> skip ;
