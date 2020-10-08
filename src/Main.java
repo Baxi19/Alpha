@@ -15,6 +15,7 @@ public class Main {
         CharStream input = null;
         CommonTokenStream tokens = null;
         ParseTree tree;
+        Visitor visitor;
 
         try {
             input = CharStreams.fromFileName("test.txt");
@@ -34,15 +35,19 @@ public class Main {
                 System.out.println(errorListener.toString());
             }
             else{
+                visitor = new Visitor();
                 java.util.concurrent.Future<JFrame> treeGUI = org.antlr.v4.gui.Trees.inspect(tree, parser);
-                treeGUI.get().setVisible(true);
+                //treeGUI.get().setVisible(true);
+
+                visitor.visit(tree);
                 System.out.println("Compilation: Successful");
+
             }
         }catch(Exception e){System.out.println("The file doesn't exist!");e.printStackTrace();}
 
-        tree = parser.program();
-        java.util.concurrent.Future<JFrame> treeGUI = org.antlr.v4.gui.Trees.inspect(tree, parser);
-        treeGUI.get().setVisible(true);
+        //tree = parser.program();
+        //java.util.concurrent.Future<JFrame> treeGUI = org.antlr.v4.gui.Trees.inspect(tree, parser);
+        //treeGUI.get().setVisible(true);
 
 
 

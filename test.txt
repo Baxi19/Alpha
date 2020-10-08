@@ -1,12 +1,4 @@
-/*          Comentary Example            */
-
-
-//Vars type
-let
-    var factorial   : int;
-    var numero      : int;
-    var i           : int
-in
 begin
-    while x do y:= (, x 44)
+    x:=(a/c);
+    z:=(b-x)
 end

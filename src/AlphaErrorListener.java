@@ -1,3 +1,4 @@
+import generated.AlphaParser;
 import generated.AlphaScanner;
 import org.antlr.v4.runtime.BaseErrorListener;
 import org.antlr.v4.runtime.RecognitionException;
@@ -18,8 +19,10 @@ public class AlphaErrorListener extends BaseErrorListener {
     public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine, String msg, RecognitionException re) {
         if (recognizer instanceof AlphaScanner){
             errorMsgs.add(new String("SCANNER ERROR -> ("+line+", "+charPositionInLine + ") " + msg));
+        }else if (recognizer instanceof AlphaParser){
+            errorMsgs.add(new String("PARSER ERROR -> ("+line+", "+charPositionInLine + ") " + msg));
         }else{
-            errorMsgs.add(new String("Other Error"));
+            errorMsgs.add(new String("OTHER ERROR"));
         }
     }
 
@@ -28,8 +31,7 @@ public class AlphaErrorListener extends BaseErrorListener {
     }
 
     @Override
-    public String toString ( )
-    {
+    public String toString (){
         if (!hasErrors()) {
             return "0 errors";
         }
