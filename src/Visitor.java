@@ -59,9 +59,24 @@ public class Visitor extends AlphaParserBaseVisitor<Object> {
     @Override
     public Object visitIfSingleCommandAST(AlphaParser.IfSingleCommandASTContext ctx) {
         System.out.println(getTabs(tabs) + ctx.getClass().getSimpleName());
-        tabs++;
+        System.out.println(ctx.IF().getSymbol().getText());
 
+        tabs++;
+        visit(ctx.expression());
         tabs--;
+
+        System.out.println(ctx.THEN().getSymbol().getText());
+
+        tabs++;
+        visit(ctx.singleCommand(0));
+        tabs--;
+
+        System.out.println(ctx.ELSE().getSymbol().getText());
+
+        tabs++;
+        visit(ctx.singleCommand(1));
+        tabs--;
+
         return null;
     }
 
@@ -137,18 +152,14 @@ public class Visitor extends AlphaParserBaseVisitor<Object> {
     @Override
     public Object visitNumPrimaryExpressionAST(AlphaParser.NumPrimaryExpressionASTContext ctx) {
         System.out.println(getTabs(tabs) + ctx.getClass().getSimpleName());
-        tabs++;
-
-        tabs--;
+        System.out.println(ctx.LITERAL().getSymbol().getText());
         return null;
     }
 
     @Override
     public Object visitIdPrimaryExpressionAST(AlphaParser.IdPrimaryExpressionASTContext ctx) {
         System.out.println(getTabs(tabs) + ctx.getClass().getSimpleName());
-        tabs++;
-
-        tabs--;
+        System.out.println(ctx.IDENT().getSymbol().getText());
         return null;
     }
 
@@ -156,7 +167,7 @@ public class Visitor extends AlphaParserBaseVisitor<Object> {
     public Object visitGroupPrimaryExpressionAST(AlphaParser.GroupPrimaryExpressionASTContext ctx) {
         System.out.println(getTabs(tabs) + ctx.getClass().getSimpleName());
         tabs++;
-
+        visit(ctx.expression());
         tabs--;
         return null;
     }

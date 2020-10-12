@@ -1,4 +1,9 @@
 begin
     x:=(a/c);
-    z:=(b-x)
+    z:=(b-x);
+    if x then
+        y := (5/33)
+    else
+        y:=(420*9)
+
 end
