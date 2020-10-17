@@ -1,9 +1,13 @@
+let
+    var x : int;
+    var z : int
+in
 begin
-    x:=(a/c);
-    z:=(b-x);
-    if x then
-        y := (5/33)
-    else
-        y:=(420*9)
+    let
+        var m : char;
+        var x: char
+    in
+        x := 3 / m * z;
 
+    z := 5 + m
 end

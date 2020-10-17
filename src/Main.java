@@ -35,11 +35,12 @@ public class Main {
                 System.out.println(errorListener.toString());
             }
             else{
-                visitor = new Visitor();
-                java.util.concurrent.Future<JFrame> treeGUI = org.antlr.v4.gui.Trees.inspect(tree, parser);
-                //treeGUI.get().setVisible(true);
 
-                visitor.visit(tree);
+                java.util.concurrent.Future<JFrame> treeGUI = org.antlr.v4.gui.Trees.inspect(tree, parser);
+                treeGUI.get().setVisible(true);
+
+                //visitor = new Visitor();
+                //visitor.visit(tree);
                 System.out.println("Compilation: Successful");
 
             }

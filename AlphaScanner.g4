@@ -39,34 +39,22 @@ END         : 'end' ;
 CONST       : 'const' ;
 VAR         : 'var' ;
 
-//--------------------------------------------------------------
-//Others Regular expressions
-//INTEGER: [1-9][0-9]* | ZERO;
-
-fragment ZERO
-    : [0]
-    ;
 
 //--------------------------------------------------------------
 // Letter
 IDENT : LETTER(LETTER|DIGIT)*;
 
-// fragment DIGIT : '0'..'9';
 LITERAL
     : DIGIT DIGIT*
     ;
 
-// fragment LETTER : 'a'..'z' | 'A'..'Z';
 fragment LETTER
     : [a-zA-Z]
     ;
 
-
 fragment DIGIT
     : [0-9]
     ;
-
-
 
 //--------------------------------------------------------------
 // skiped words
