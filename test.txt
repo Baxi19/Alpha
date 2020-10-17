@@ -9,5 +9,6 @@ begin
     in
         x := 3 / m * z;
 
-    z := 5 + m
+    z := 5 + m;
+    w := z + 5
 end

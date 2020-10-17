@@ -2,51 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4005799b-1a4a-48b5-b2e8-ede563ab5f2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parser/MiVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parser/TablaSimbolos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AlphaParser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/AlphaParser.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlphaScanner.g4" beforeDir="false" afterPath="$PROJECT_DIR$/AlphaScanner.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Alpha/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Alpha/Visitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/Visitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$AssignSingleCommandASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$AssignSingleCommandASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$BlockSingleCommandASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$BlockSingleCommandASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$CallSingleCommandASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$CallSingleCommandASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$CommandASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$CommandASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$CommandContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$CommandContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ConstSingleDeclarationASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ConstSingleDeclarationASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$DeclarationASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$DeclarationASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$DeclarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$DeclarationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ExpressionASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ExpressionASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$GroupPrimaryExpressionASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$GroupPrimaryExpressionASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$IdPrimaryExpressionASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$IdPrimaryExpressionASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$IfSingleCommandASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$IfSingleCommandASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$LetSingleCommandASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$LetSingleCommandASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$NumPrimaryExpressionASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$NumPrimaryExpressionASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$OperatorContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$OperatorContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$PrimaryExpressionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$PrimaryExpressionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ProgramASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ProgramASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$ProgramContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$SingleCommandContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$SingleCommandContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$SingleDeclarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$SingleDeclarationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$VarSingleDeclarationASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$VarSingleDeclarationASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$WhileSingleCommandASTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser$WhileSingleCommandASTContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParser.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParserBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParserBaseVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParserVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaParserVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaScanner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaScanner.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/generated/AlphaScanner.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/parser/TablaSimbolos$Ident.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/parser/TablaSimbolos$Ident.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Alpha/parser/TablaSimbolos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Alpha/parser/TablaSimbolos.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaParser.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaParser.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaParserBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaParserBaseVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaParserVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaParserVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaScanner.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaScanner.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/AlphaScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/generated/AlphaScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/TablaSimbolos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/TablaSimbolos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,29 +141,29 @@
     <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1602820461819" />
     <state x="2095" y="157" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601942371889" />
     <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1601688875326" />
-    <state width="1557" height="220" key="GridCell.Tab.0.bottom" timestamp="1602955823492">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="637" height="220" key="GridCell.Tab.0.bottom" timestamp="1602971064247">
+      <screen x="1600" y="0" width="1366" height="728" />
     </state>
-    <state width="1557" height="220" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1602955823492" />
-    <state width="1323" height="218" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601705575330" />
+    <state width="1557" height="220" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1602958350857" />
+    <state width="637" height="220" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1602971064247" />
     <state width="1557" height="220" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602799540406" />
-    <state width="1557" height="220" key="GridCell.Tab.0.center" timestamp="1602955823492">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="637" height="220" key="GridCell.Tab.0.center" timestamp="1602971064247">
+      <screen x="1600" y="0" width="1366" height="728" />
     </state>
-    <state width="1557" height="220" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1602955823492" />
-    <state width="1323" height="218" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601705575330" />
+    <state width="1557" height="220" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1602958350857" />
+    <state width="637" height="220" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1602971064247" />
     <state width="1557" height="220" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602799540406" />
-    <state width="1557" height="220" key="GridCell.Tab.0.left" timestamp="1602955823492">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="637" height="220" key="GridCell.Tab.0.left" timestamp="1602971064247">
+      <screen x="1600" y="0" width="1366" height="728" />
     </state>
-    <state width="1557" height="220" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1602955823492" />
-    <state width="1323" height="218" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601705575330" />
+    <state width="1557" height="220" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1602958350857" />
+    <state width="637" height="220" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1602971064247" />
     <state width="1557" height="220" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602799540405" />
-    <state width="1557" height="220" key="GridCell.Tab.0.right" timestamp="1602955823492">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="637" height="220" key="GridCell.Tab.0.right" timestamp="1602971064247">
+      <screen x="1600" y="0" width="1366" height="728" />
     </state>
-    <state width="1557" height="220" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1602955823492" />
-    <state width="1323" height="218" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1601705575330" />
+    <state width="1557" height="220" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1366.728@0.0.1600.860" timestamp="1602958350857" />
+    <state width="637" height="220" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1366.728@1600.0.1366.728" timestamp="1602971064247" />
     <state width="1557" height="220" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602799540406" />
     <state x="380" y="165" key="IDE.errors.dialog" timestamp="1601278987976">
       <screen x="0" y="0" width="1600" height="860" />

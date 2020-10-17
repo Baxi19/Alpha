@@ -5,9 +5,6 @@ import org.antlr.v4.runtime.Token;
 
 import java.util.LinkedList;
 
-/**
- * Created by oviquez on 19/9/2016.
- */
 public class TablaSimbolos {
     LinkedList<Object> tabla;
 
@@ -39,15 +36,13 @@ public class TablaSimbolos {
         this.nivelActual=-1;
     }
 
-    public void insertar(Token id, int tipo, ParserRuleContext decl)
-    {
+    public void insertar(Token id, int tipo, ParserRuleContext decl) {
         //no se puede insertar un elemento repetido en el mismo nivel
         Ident i = new Ident(id,tipo,decl);
         tabla.add(i);
     }
 
-    public Ident buscar(String nombre)
-    {
+    public Ident buscar(String nombre){
         //debe buscarse en otro orden... de atrás para adelante
         Ident temp=null;
         for(Object id : tabla)
