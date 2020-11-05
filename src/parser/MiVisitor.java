@@ -21,7 +21,6 @@ public class MiVisitor extends AlphaParserBaseVisitor<Object> {
     }
 
 
-
     @Override public Object visitProgramAST(AlphaParser.ProgramASTContext ctx) {
         System.out.println(printTabs(cantTabs)+ctx.getClass().getSimpleName());
         cantTabs++;
@@ -36,7 +35,7 @@ public class MiVisitor extends AlphaParserBaseVisitor<Object> {
         visit(ctx.singleCommand(0));
         cantTabs--;
         int i;
-        for(i=1; i <= ctx.singleCommand().size()-1; i++) {
+        for(i=1; i < ctx.singleCommand().size(); i++) {
             cantTabs++;
             visit(ctx.singleCommand(i));
             cantTabs--;

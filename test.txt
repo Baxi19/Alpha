@@ -1,14 +1,18 @@
 let
-    var x : int;
-    var z : int
+  var num : Int;
+  var a : Int;
+  var b : Int;
+  var temp : Int
 in
 begin
-    let
-        var m : char;
-        var x: char
-    in
-        x := 3 / m * z;
-
-    z := 5 + m;
-    w := z + 5
+  num := 5;
+  a := 1;
+  b := 0;
+  while (num) do
+  begin
+    temp := a;
+    a := a + b - a * 2 / 5;
+    b := temp + a;
+    num := num - 1
+  end
 end

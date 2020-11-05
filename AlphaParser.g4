@@ -23,8 +23,8 @@ singleCommand
                 :
                 IDENT ASSING expression
                 {if ( symbols.buscar($IDENT.text) == null ) {
-                        System.err.println("undefined variable: "+$IDENT.text+ " in : ["+$IDENT.line+","+$IDENT.pos + "]");
-                    }}                                                                                                  #assignSingleCommandAST
+                    System.err.println("undefined variable: "+$IDENT.text+ " in : ["+$IDENT.line+","+$IDENT.pos + "]");
+                }}                                                                                                      #assignSingleCommandAST
                 | ident L_PARENT expression R_PARENT                                                                    #callSingleCommandAST
                 | IF expression THEN singleCommand ELSE singleCommand                                                   #ifSingleCommandAST
                 | WHILE expression DO singleCommand                                                                     #whileSingleCommandAST
@@ -43,7 +43,7 @@ typeDenoter     : IDENT                                                         
 
 expression      : primaryExpression (operator primaryExpression)*                                                       #expressionAST;
 
-primaryExpression : LITERAL                                         #numPrimaryExpressionAST
+primaryExpression : LITERAL                                                                                             #numPrimaryExpressionAST
                 | IDENT
                 {if ( symbols.buscar($IDENT.text) == null ) {
                     System.err.println("undefined variable: "+$IDENT.text+ " in : ["+$IDENT.line+","+$IDENT.pos + "]");
